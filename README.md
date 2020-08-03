@@ -4,7 +4,7 @@ Here Quantum Resources like: Book, Papers, Videos
 # BOOKS
 
 |Year|Title|
-| ------------- |:-------------:|
+| ------------- |-------------|
 |2020| [Cryptography Apocalypse: Preparing For The Day When Quantum Computing Breaks Today’s Crypto](https://b-ok.lat/book/5284601/ebae50)|
 |2020| [Quantum Image Processing](https://b-ok.lat/book/5332993/d76695)|
 |2020| [Analysis and Design of Next-Generation Software Architectures: 5G, IoT, Blockchain, and Quantum Computing](https://b-ok.lat/book/5450688/885029)|
