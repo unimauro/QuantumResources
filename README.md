@@ -5,6 +5,22 @@ Here Quantum Resources like: Book, Papers, Videos
 
 |Year|Title|
 | ------------- |:-------------:|
+|2020| [Cryptography Apocalypse: Preparing For The Day When Quantum Computing Breaks Today’s Crypto](https://b-ok.lat/book/5284601/ebae50)|
+|2020| [Quantum Image Processing](https://b-ok.lat/book/5332993/d76695)|
+|2020| [Analysis and Design of Next-Generation Software Architectures: 5G, IoT, Blockchain, and Quantum Computing](https://b-ok.lat/book/5450688/885029)|
+|2020| [Quantum Computing and Blockchain in Business: Exploring the applications, challenges, and collision of quantum computing and blockchain](https://b-ok.lat/book/5534584/70a082)|
+|2020| [Quantum Computing and Blockchain in Business: Exploring the applications, challenges, and collision of quantum computing and blockchain](https://b-ok.lat/book/5534585/2df85d)|
+|2019| [Practical Quantum Computing for Developers: Programming Quantum Rigs in the Cloud using Python, Quantum Assembly Language and IBM QExperience](https://b-ok.lat/book/3642069/6ad6eb)|
+|2019| [Computational Methods to Study the Structure and Dynamics of Biomolecules and Biomolecular Processes: From Bioinformatics to Molecular Quantum Mechanics](https://b-ok.lat/book/3661934/9a4d88)|
+|2019| [Computational Quantum Mechanics](https://b-ok.lat/book/3696901/db6633)|
+|2019| [The Simulation Hypothesis: An MIT Computer Scientist Shows Why Ai, Quantum Physics and Eastern Mystics All Agree We Are in a Video Game](https://b-ok.lat/book/4999390/eb84ab)|
+|2019| [A Primer on Quantum Computing](https://b-ok.lat/book/5208127/e3f58a)|
+|2019| [Quantum computing for everyone](https://b-ok.lat/book/5211589/ff686c)|
+|2019| [Quantum computing for everyone](https://b-ok.lat/book/5211590/a7efe4)|
+|2019| [Post-Quantum Cryptography: 10th International Conference, PQCrypto 2019, Chongqing, China, May 8–10, 2019 Revised Selected Papers](https://b-ok.lat/book/5216140/d3523b)|
+|2019| [Programming Quantum Computers: Essential Algorithms and Code Samples](https://b-ok.lat/book/5219375/b9c708)|
+|2019| [Towards a Scalable Quantum Computing Platform in the Ultrastrong Coupling Regime](https://b-ok.lat/book/5244084/63a1b3)|
+|2019| [Topological Orders with Spins and Fermions: Quantum Phases and Computation](https://b-ok.lat/book/5244529/228f58)|
 |2020|Cryptography Apocalypse: Preparing For The Day When Quantum Computing Breaks Today’s Crypto|
 |2020|Quantum Image Processing|
 |2020|Analysis and Design of Next-Generation Software Architectures: 5G, IoT, Blockchain, and Quantum Computing|
