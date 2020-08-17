@@ -491,3 +491,5 @@ Here Quantum Resources like: Book, Papers, Videos
 	<a href="https://www.linkedin.com/in/carloscardenasf/"><img src="https://img.shields.io/badge/LinkedIn--_.svg?style=social&logo=linkedin" alt="LinkedIn"></a>
 <br/><a href="https://www.cardenas.pe/">www.cardenas.pe</a>
 </p>
+
+- 🌱 I’m currently learning all the technology: Quantum Computer, Machine Learning, DevOps, Cloud, Black Hat
