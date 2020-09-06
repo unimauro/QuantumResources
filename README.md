@@ -494,5 +494,3 @@ Here Quantum Resources like: Book, Papers, Videos
 </p>
 
 - 🌱 I’m currently learning all the technology: Quantum Computer, Machine Learning, DevOps, Cloud, Black Hat
-Verificando
-Verificando
