@@ -1,6 +1,124 @@
 # QuantumResources
 Here Quantum Resources like: Book, Papers, Videos
 
+## Quantum machine learning resources:
+
+[Github repo: awesome QML](https://github.com/krishnakumarsekar/awesome-quantum-machine-learning)
+
+[2 Github repo](https://github.com/artix41/awesome-quantum-ml)
+
+[QML MOOC by Petter Wittek](https://www.youtube.com/watch?v=QtWCmO_KIlg&list=PLmRxgFnCIhaMgvot-Xuym_hn69lmzIokg&index=1)
+
+[QML Hackaton](https://medium.com/xanaduai/we-came-we-saw-we-qhacked-dacea7914f5a)
+
+[QML 101 - Medium post](https://towardsdatascience.com/quantum-machine-learning-101-1058f24c3487)
+
+[The Emerging Role of Quantum Computing in Machine Learning (Recomendado)](https://www.youtube.com/watch?v=V2WRdU56WIc)
+
+[Introductory material for QML:](https://quantumcomputing.stackexchange.com/questions/2151/introductory-material-for-quantum-machine-learning)
+
+[An introduction to Quantum Machine Learning - Webinar by Aroosa Ijaz](https://www.youtube.com/watch?v=-DWng3jyBIM)
+
+[An introduction to QML by Maria Schuld](https://arxiv.org/pdf/1409.3097.pdf)
+
+[Quantum machine learning for supervised pattern recognition by Maria Schuld:](https://pdfs.semanticscholar.org/9d3b/04e3667b13d55d0fbe65cb21ea7c52614e2c.pdf)
+
+[QML talk 2020: Maria Schuld](https://www.youtube.com/watch?v=C_lBYKV_pJo)
+
+[QML and Pennylane by Maria Schuld](https://www.youtube.com/watch?v=pe1d0RyCNxY)
+
+[How to translate from Qubiter to Pennylane](https://github.com/artiste-qb-net/qubiter/blob/master/qubiter/jupyter_notebooks/Translating_from_Qubiter_to_Xanadu_PennyLane.ipynb)
+
+[QML by Jacob Biamonte and Petter Wittek](https://arxiv.org/pdf/1611.09347.pdf)
+
+[“QML Algorithms: Read the Fine Print” by Scott Aaronson](https://www.scottaaronson.com/papers/qml.pdf)
+
+[QML: a classical perspective](https://arxiv.org/pdf/1707.08561.pdf)
+
+[QML for data scientists](https://arxiv.org/pdf/1804.10068.pdf)
+
+[Data re-uploading for a universal quantum classifier](https://arxiv.org/pdf/1907.02085.pdf)
+
+[Talk: What Can We Expect from QML? Dr. Peter Wittek](https://www.youtube.com/watch?v=EKWGLERVLuc)
+
+[Highlighting Quantum Computing for Machine Learning](https://medium.com/meetech/highlighting-quantum-computing-for-machine-learning-1f1abd41cb59)
+
+[Quantum embeddings for machine learning](https://arxiv.org/pdf/2001.03622.pdf)
+
+[On quantum ensembles of quantum classifiers](https://arxiv.org/pdf/2001.10833.pdf)
+
+[Parameterized quantum circuits as machine learning models](
+https://iopscience.iop.org/article/10.1088/2058-9565/ab4eb5/meta)
+
+[The Holy Grail of Quantum Artificial Intelligence: Major Challenges in Accelerating the Machine Learning Pipeline](https://arxiv.org/abs/2004.14035)
+
+[Quantum Assisted Feed-Forward Neural Network For MNIST Image Classification](https://quantumzeitgeist.com/quantum-assisted-feed-forward-neural-network-for-mnist-image-classification)
+
+[No Free Lunch for QML](https://scirate.com/arxiv/2003.14103)
+
+[End-to-End QML Implemented with Controlled Quantum Dynamics](https://scirate.com/arxiv/2003.13658)
+
+[Bayesian deep learning on quantum computers](https://arxiv.org/pdf/1806.11463.pdf)
+
+[Repo with code of the previous paper:](https://gitlab.com/apozas/bayesian-dl-quantum)
+
+[Latest improved HHL algorithm for previous paper](https://arxiv.org/pdf/2003.12770.pdf)
+
+[QML: Prospects and challenges](https://www.youtube.com/watch?v=Ycy40s4aXxs)
+
+[Panel discussion: QML](https://www.youtube.com/watch?v=-YY_kWpdu3Y)
+
+[QML with PyTorch and Qiskit](https://blog.usejournal.com/quantum-machine-learning-hybrid-quantum-classical-machine-learning-with-pytorch-and-qiskit-d03da758d58b)
+
+[Reddit question: Best major and focus for QML](https://www.reddit.com/r/QuantumComputing/comments/h9upxv/best_majors_and_focus_for_quantum_machine_learning/)
+
+[A Classical Algorithm Framework for Dequantizing QML](https://www.youtube.com/watch?v=j4k6aVihQXE&list=RDCMUCW1C2xOfXsIzPgjXyuhkw9g&start_radio=1)
+
+[New Directions for Tensor Networks: Machine Learning and Quantum Computing I](https://www.youtube.com/watch?v=Ql2-doWQYJk)
+
+[QML - What Quantum Computing Means to Data Mining ( Book) by Peter Wittek](https://www.researchgate.net/profile/Peter_Wittek/publication/264825604_Quantum_Machine_Learning_What_Quantum_Computing_Means_to_Data_Mining/links/5ababcfba6fdcc71647085db/Quantum-Machine-Learning-What-Quantum-Computing-Means-to-Data-Mining.pdf)
+
+[Implementing QSVM on IBM’s Quantum computers](https://quantumcomputinguk.org/tutorials/how-to-implement-qsvm-algorithm-on-ibms-quantum-computers-with-qiskit)
+
+[QML: Training a model on IBM quantum computers  with the iris flower dataset](https://iris.entropicalabs.io/)
+
+[Introduction to QSVM](https://medium.com/@patrick.huembeli/introduction-into-quantum-support-vector-machines-727f3ccfa2b4)
+
+[Training quantum neural networks with Pennylane, PyTorch, and TensorFlow](https://medium.com/xanaduai/training-quantum-neural-networks-with-pennylane-pytorch-and-tensorflow-c669108118cc)
+
+[How to calculate Quantum Gradients and use them for classification:](https://colab.research.google.com/github/kareem1925/Ismailia-school-of-AI/blob/master/quantum_gradients/universal_qubit_classifier_using_gradient_descent.ipynb)
+
+[Can Quantum Computers Learn Like Classical Computers? A Co-Design Framework for Machine Learning and Quantum Circuits](https://scirate.com/arxiv/2006.14815)
+
+[On Sampling and Inference using Quantum Algorithms](https://scirate.com/arxiv/2006.11775)
+
+[Recurrent Quantum Neural Networks](https://scirate.com/arxiv/2006.14619)
+
+[Layerwise learning for quantum neural networks](https://scirate.com/arxiv/2006.14904)
+
+[Boltzmann machine learning with a variational quantum algorithm](https://arxiv.org/abs/2007.00876)
+
+[Single-photon QML improves on the classical result](https://quantumzeitgeist.com/single-photon-quantum-machine-learning-improves-on-classical-result)
+
+[The effect of data encoding on the expressive power of variational QML models](https://arxiv.org/abs/2008.08605)
+
+[“Quantum Classification” by Brian N. Siegelwax](https://link.medium.com/fOEeWHIIy9)
+
+[“Superdense Encoding of Classical Data” by Brian N. Siegelwax](https://link.medium.com/qhSSSX2iA9)
+
+[“Quantum Clustering & Classification” by Brian N. Siegelwax](https://link.medium.com/9BTVkL5iA9)
+
+[NITheP QML mini-school by Amira Abbas - First session](https://www.youtube.com/watch?v=iWrGVHwXPSI)
+
+[SMBQ Day 2: Amira Abbas and Maria Schuld QML talks](https://www.youtube.com/watch?v=kAHtzHzAzgE)
+
+[Efficient calculation of gradients in classical simulations of variational quantum algorithms](https://arxiv.org/abs/2009.02823)
+
+[Quantum Transfer Learning](https://pennylane.ai/qml/demos/tutorial_quantum_transfer_learning.html)
+
+
+
+
 # BOOKS
 
 |Year|Title|
