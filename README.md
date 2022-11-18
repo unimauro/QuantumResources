@@ -124,7 +124,7 @@ https://iopscience.iop.org/article/10.1088/2058-9565/ab4eb5/meta)
 
 |Year|Title|
 | ------------- |-------------|
-|2020| [Cryptography Apocalypse: Preparing For The Day When Quantum Computing Breaks Today’s Crypto](https://b-ok.lat/book/5284601/ebae50)|
+|2020| [Cryptography Apocalypse: Preparing For The Day When Quantum Computing Breaks Today’s Crypto](http://zlibrary24tuxziyiyfr7zd46ytefdqbqd2axkmxm4o5374ptpc52fad.onion/book/10989920/667082)|
 |2020| [Quantum Image Processing](https://b-ok.lat/book/5332993/d76695)|
 |2020| [Analysis and Design of Next-Generation Software Architectures: 5G, IoT, Blockchain, and Quantum Computing](https://b-ok.lat/book/5450688/885029)|
 |2020| [Quantum Computing and Blockchain in Business: Exploring the applications, challenges, and collision of quantum computing and blockchain](https://b-ok.lat/book/5534584/70a082)|
