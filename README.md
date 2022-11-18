@@ -1,7 +1,8 @@
 # QuantumResources
-Here Quantum Resources like: Book, Papers, Videos
+Here Quantum Resources like: Book, Papers, Videos 2021
 
 ## Quantum machine learning resources:
+
 
 [Github repo: awesome QML](https://github.com/krishnakumarsekar/awesome-quantum-machine-learning)
 
@@ -118,12 +119,11 @@ https://iopscience.iop.org/article/10.1088/2058-9565/ab4eb5/meta)
 
 
 
-
 # BOOKS
 
 |Year|Title|
 | ------------- |-------------|
-|2020| [Cryptography Apocalypse: Preparing For The Day When Quantum Computing Breaks Today’s Crypto](https://b-ok.lat/book/5284601/ebae50)|
+|2020| [Cryptography Apocalypse: Preparing For The Day When Quantum Computing Breaks Today’s Crypto](http://zlibrary24tuxziyiyfr7zd46ytefdqbqd2axkmxm4o5374ptpc52fad.onion/book/10989920/667082)|
 |2020| [Quantum Image Processing](https://b-ok.lat/book/5332993/d76695)|
 |2020| [Analysis and Design of Next-Generation Software Architectures: 5G, IoT, Blockchain, and Quantum Computing](https://b-ok.lat/book/5450688/885029)|
 |2020| [Quantum Computing and Blockchain in Business: Exploring the applications, challenges, and collision of quantum computing and blockchain](https://b-ok.lat/book/5534584/70a082)|
@@ -598,3 +598,16 @@ https://iopscience.iop.org/article/10.1088/2058-9565/ab4eb5/meta)
 |1972| [Computing Methods in Quantum Organic Chemistry](https://b-ok.lat/book/601760/c72c21)|
 |1972| [Computing Methods in Quantum Organic Chemistry  ](https://b-ok.lat/book/1181798/9e285e)|
 |1971| [Problems in Quantum Mechanics](https://b-ok.lat/book/638250/854205)|
+
+
+- 💬 Ask and follow me in  [![Twitter Badge](https://img.shields.io/badge/-@unimauro-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/unimauro)](https://twitter.com/unimauro)
+- 📫 How to reach me: carlos@cardenas.pe
+
+<p align="center"=>
+	<a href="https://github.com/unimauro"><img src="https://img.shields.io/github/followers/unimauro.svg?label=GitHub&style=social" alt="GitHub"></a>
+	<a href="https://twitter.com/unimauro"><img src="https://img.shields.io/twitter/follow/unimauro?label=Twitter&style=social" alt="Twitter"></a>
+	<a href="https://www.linkedin.com/in/carloscardenasf/"><img src="https://img.shields.io/badge/LinkedIn--_.svg?style=social&logo=linkedin" alt="LinkedIn"></a>
+<br/><a href="https://www.cardenas.pe/">www.cardenas.pe</a>
+</p>
+
+- 🌱 I’m currently learning all the technology: Quantum Computer, Machine Learning, DevOps, Cloud, Black Hat
