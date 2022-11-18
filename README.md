@@ -1,8 +1,8 @@
 # QuantumResources
 Here Quantum Resources like: Book, Papers, Videos 2021
 
+## Quantum machine learning resources:
 
-Quantum machine learning resources:
 
 [Github repo: awesome QML](https://github.com/krishnakumarsekar/awesome-quantum-machine-learning)
 
@@ -119,7 +119,6 @@ https://iopscience.iop.org/article/10.1088/2058-9565/ab4eb5/meta)
 
 
 
-# Videos
 # BOOKS
 
 |Year|Title|
