@@ -1,5 +1,5 @@
 # QuantumResources
-Here Quantum Resources like: Book, Papers, Videos 2024
+Here Quantum Resources like: Courses, Books, Papers, Videos 2024
 
 ## Quantum machine learning resources:
 
