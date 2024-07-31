@@ -1,6 +1,8 @@
 # QuantumResources
 Here Quantum Resources like: Courses, Books, Papers, Videos 2024
 
+2025 All Quantum tech
+
 ## Quantum machine learning resources:
 
 
