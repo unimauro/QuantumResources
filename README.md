@@ -125,6 +125,35 @@ https://iopscience.iop.org/article/10.1088/2058-9565/ab4eb5/meta)
 
 |Year|Title|
 | ------------- |-------------|
+|2025| [Quantum Nation: India's Leap into the Future](https://amzn.to/3PkRN8N)|
+|2025| [Introduction to Quantum Computing: From a Layperson to a Programmer in 30 Steps](https://www.amazon.com/Introduction-Quantum-Computing-Layperson-Programmer/dp/303136984X)|
+|2024| [A Gentle Introduction to Quantum Computing: Applied Concepts for Beginners](https://www.amazon.com/Gentle-Introduction-Quantum-Computing-Beginners/dp/B0D31B9NMF)|
+|2024| [Quantum Computing for Programmers](https://www.cambridge.org/core/books/quantum-computing-for-programmers/BA1C887BE4AC0D0D5653E71FFBEF61C6)|
+|2024| [Essential Mathematics for Quantum Computing: A beginner's guide to just the math you need without needless complexities](https://amzn.to/4cWP0xb)|
+|2024| [A Practical Guide to Quantum Machine Learning and Quantum Optimization: Hands-on Approach to Modern Quantum Algorithms](https://amzn.to/3U15njD)|
+|2024| [Quantum Chemistry and Computing for the Curious: Illustrated with Python and Qiskit® code](https://amzn.to/3Jum020)|
+|2024| [Learn Quantum Computing with Python and IBM Quantum Experience (2nd Edition)](https://www.amazon.com/Learn-Quantum-Computing-Python-IBM-dp-1803244801/dp/1803244801)|
+|2023| [Quantum Supremacy: How the Quantum Computer Revolution Will Change Everything](https://mitpressbookstore.mit.edu/book/9780593744239)|
+|2023| [Quantum Computing Experimentation with Amazon Braket](https://amzn.to/443O3yW)|
+|2023| [Quantum Information Science](https://amzn.to/4bj1xcL)|
+|2023| [Quantum Information and Quantum Optics with Superconducting Circuits](https://amzn.to/3TWPfj2)|
+|2023| [Law and Policy for the Quantum Age](https://amzn.to/3xI1Krd)|
+|2023| [Quantum Networks: A Primer](https://amzn.to/443r3Qu)|
+|2023| [Quantum Excellence: How Leading Companies Are Deploying the Transformational Technology](https://amzn.to/4d0KL3A)|
+|2023| [Fundamentals of Quantum Computing: Theory and Practice](https://amzn.to/49JQmby)|
+|2022| [Dancing with Qubits, Second Edition](https://amzn.to/4gWNv37)|
+|2022| [Quantum Computing in Action](https://amzn.to/3JnOlqU)|
+|2022| [Quantum Computing and Information: A Scaffolding Approach](https://amzn.to/3UmLYe8)|
+|2022| [Quantum Computing for the Quantum Curious](https://amzn.to/3W5ByRx)|
+|2022| [Mathematics of Quantum Computing: An Introduction](https://amzn.to/447oMUC)|
+|2022| [Quantum Design Sprint](https://amzn.to/4aE1XKN)|
+|2022| [Quantum Boost: Using Quantum Computing to Supercharge Your Business](https://amzn.to/3WntxaX)|
+|2021| [Understanding Quantum Technologies](https://arxiv.org/abs/2111.15352v1)|
+|2021| [Programming Quantum Computers](https://amzn.to/4aC5Pf6)|
+|2021| [Learn Quantum Computing with Python and Q#: A hands-on approach](https://amzn.to/3xEl5tw)|
+|2021| [Quantum in Pictures: A New Way to Understand the Quantum World](https://amzn.to/448LqvY)|
+|2021| [Q is for Quantum](https://amzn.to/3vYLAJs)|
+|2021| [Picturing Quantum Processes: A First Course in Quantum Theory and Diagrammatic Reasoning](https://amzn.to/3Uqiuwd)|
 |2020| [Cryptography Apocalypse: Preparing For The Day When Quantum Computing Breaks Today’s Crypto](http://zlibrary24tuxziyiyfr7zd46ytefdqbqd2axkmxm4o5374ptpc52fad.onion/book/10989920/667082)|
 |2020| [Quantum Image Processing](https://b-ok.lat/book/5332993/d76695)|
 |2020| [Analysis and Design of Next-Generation Software Architectures: 5G, IoT, Blockchain, and Quantum Computing](https://b-ok.lat/book/5450688/885029)|
