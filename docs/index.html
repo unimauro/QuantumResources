@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Resources - Recursos de Computación Cuántica</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-atom"></i>
+                <span>Quantum Resources</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#qml" class="nav-link">QML</a></li>
+                <li><a href="#libros" class="nav-link">Libros</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="inicio">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Quantum Resources</h1>
+                <p class="hero-subtitle">Tu guía completa para Computación Cuántica</p>
+                <p class="hero-description">
+                    Descubre cursos, libros, papers y videos sobre computación cuántica y machine learning cuántico. 
+                    Una colección curada de los mejores recursos para aprender sobre el futuro de la computación.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#qml" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Explorar QML
+                    </a>
+                    <a href="#libros" class="btn btn-secondary">
+                        <i class="fas fa-book"></i>
+                        Ver Libros
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="quantum-animation">
+                    <div class="qubit"></div>
+                    <div class="qubit"></div>
+                    <div class="qubit"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <main>
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-brain"></i>
+                        <h3 id="qml-count">55+</h3>
+                        <p>Recursos QML</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-book-open"></i>
+                        <h3 id="books-count">500+</h3>
+                        <p>Libros</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h3>2025</h3>
+                        <p>Actualizado</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Comunidad</h3>
+                        <p>Global</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="qml-section" id="qml">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Quantum Machine Learning</h2>
+                    <p>Recursos esenciales para aprender QML desde cero hasta nivel avanzado</p>
+                </div>
+                
+                <div class="resource-categories">
+                    <div class="category-tabs">
+                        <button class="tab-btn active" data-category="all">Todos</button>
+                        <button class="tab-btn" data-category="courses">Cursos</button>
+                        <button class="tab-btn" data-category="papers">Papers</button>
+                        <button class="tab-btn" data-category="videos">Videos</button>
+                        <button class="tab-btn" data-category="tools">Herramientas</button>
+                    </div>
+                    
+                    <div class="resources-grid" id="qml-resources">
+                        <!-- Los recursos se cargarán dinámicamente -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="books-section" id="libros">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Biblioteca Cuántica</h2>
+                    <p>Libros de computación cuántica organizados por año de publicación</p>
+                </div>
+                
+                <div class="books-filters">
+                    <button class="filter-btn active" data-year="all">Todos los años</button>
+                    <button class="filter-btn" data-year="2025">2025</button>
+                    <button class="filter-btn" data-year="2024">2024</button>
+                    <button class="filter-btn" data-year="2023">2023</button>
+                    <button class="filter-btn" data-year="2022">2022</button>
+                    <button class="filter-btn" data-year="2021">2021</button>
+                    <button class="filter-btn" data-year="old">2020 y anteriores</button>
+                </div>
+                
+                <div class="search-container">
+                    <input type="text" id="book-search" placeholder="Buscar libros..." class="search-input">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                
+                <div class="books-grid" id="books-container">
+                    <!-- Los libros se cargarán dinámicamente -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="sobre">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quantum Resources</h3>
+                    <p>Una colección curada de recursos para aprender computación cuántica y machine learning cuántico.</p>
+                    <div class="social-links">
+                        <a href="https://twitter.com/unimauro" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://github.com/unimauro" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/carloscardenasf/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="#qml">Recursos QML</a></li>
+                        <li><a href="#libros">Libros</a></li>
+                        <li><a href="https://github.com/unimauro/QuantumResources">GitHub</a></li>
+                        <li><a href="https://www.cardenas.pe/">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>
+                        <i class="fas fa-envelope"></i>
+                        carlos@cardenas.pe
+                    </p>
+                    <p>
+                        <i class="fas fa-globe"></i>
+                        <a href="https://www.cardenas.pe/">www.cardenas.pe</a>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Carlos Cárdenas. Todos los derechos reservados.</p>
+                <p>Última actualización: <span id="last-update"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-to-top" id="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html> 

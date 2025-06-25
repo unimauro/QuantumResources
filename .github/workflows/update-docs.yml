@@ -1,0 +1,142 @@
+name: Update GitHub Pages
+
+on:
+  push:
+    branches: [ master, main ]
+    paths:
+      - 'README.md'
+      - 'QuantumResources.ipynb'
+      - 'update_docs.py'
+  workflow_dispatch:
+  
+  # Ejecutar automáticamente cada semana
+  schedule:
+    - cron: '0 0 * * 0'  # Domingos a medianoche UTC
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📥 Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    
+    - name: 🐍 Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    
+    - name: 📦 Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        # Instalar dependencias básicas para el parser
+        pip install nbformat jupyter
+    
+    - name: 🔍 Check for changes
+      id: changes
+      run: |
+        if git diff --name-only HEAD~1 HEAD | grep -E "(README\.md|QuantumResources\.ipynb|update_docs\.py)"; then
+          echo "changes=true" >> $GITHUB_OUTPUT
+        else
+          echo "changes=false" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: 🚀 Update documentation
+      if: steps.changes.outputs.changes == 'true' || github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'
+      run: |
+        echo "🔄 Actualizando documentación..."
+        python update_docs.py --verbose
+        
+        # Verificar que los archivos fueron generados correctamente
+        if [ ! -f "docs/index.html" ]; then
+          echo "❌ Error: index.html no fue generado"
+          exit 1
+        fi
+        
+        if [ ! -f "docs/data.json" ]; then
+          echo "❌ Error: data.json no fue generado" 
+          exit 1
+        fi
+        
+        echo "✅ Documentación actualizada correctamente"
+    
+    - name: 📊 Show statistics
+      if: steps.changes.outputs.changes == 'true' || github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'
+      run: |
+        echo "📈 Estadísticas del sitio:"
+        if [ -f "docs/data.json" ]; then
+          python3 -c "
+        import json
+        with open('docs/data.json', 'r') as f:
+            data = json.load(f)
+        print('📚 Libros:', data.get('total_books', 0))
+        print('🧠 Recursos QML:', data.get('total_qml_resources', 0))
+        print('🕒 Última actualización:', data.get('last_update', 'N/A'))
+        "
+        fi
+    
+    - name: 🌐 Setup Pages
+      if: steps.changes.outputs.changes == 'true' || github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'
+      uses: actions/configure-pages@v3
+    
+    - name: 📁 Upload artifact
+      if: steps.changes.outputs.changes == 'true' || github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'
+      uses: actions/upload-pages-artifact@v2
+      with:
+        path: './docs'
+    
+    - name: 🚀 Deploy to GitHub Pages
+      if: steps.changes.outputs.changes == 'true' || github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'
+      id: deployment
+      uses: actions/deploy-pages@v2
+    
+    - name: 📝 Commit updated files
+      if: steps.changes.outputs.changes == 'true' || github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        
+        # Agregar archivos modificados
+        git add docs/ || true
+        
+        # Commit solo si hay cambios
+        if git diff --staged --quiet; then
+          echo "No hay cambios para commitear"
+        else
+          git commit -m "🤖 Actualización automática de la documentación
+          
+          - Libros actualizados desde README.md
+          - Recursos QML procesados
+          - Fecha: $(date -u '+%Y-%m-%d %H:%M:%S UTC')
+          
+          [skip ci]" || echo "Commit falló, posiblemente no hay cambios"
+          
+          git push || echo "Push falló, posiblemente no hay cambios"
+        fi
+    
+    - name: 🎉 Success notification
+      if: success() && (steps.changes.outputs.changes == 'true' || github.event_name == 'workflow_dispatch' || github.event_name == 'schedule')
+      run: |
+        echo "✅ ¡Despliegue exitoso!"
+        echo "🌐 Tu sitio está disponible en: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
+        echo "📊 Revisa las estadísticas en el log anterior"
+    
+    - name: ❌ Failure notification
+      if: failure()
+      run: |
+        echo "❌ El despliegue falló. Revisa los logs para más detalles."
+        echo "🔍 Pasos para debuggear:"
+        echo "   1. Revisa el formato del README.md"
+        echo "   2. Verifica que la carpeta docs/ existe"
+        echo "   3. Asegúrate de que el script update_docs.py funciona localmente" 
