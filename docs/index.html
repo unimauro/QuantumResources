@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quantum Resources - Recursos de Computación Cuántica</title>
+    <meta name="description" content="Colección curada de recursos de computación cuántica: cursos, libros, papers, videos, frameworks y herramientas.">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
@@ -17,9 +18,12 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#youtube" class="nav-link">YouTube</a></li>
+                <li><a href="#cursos" class="nav-link">Cursos</a></li>
+                <li><a href="#repos" class="nav-link">GitHub</a></li>
+                <li><a href="#papers" class="nav-link">Papers</a></li>
                 <li><a href="#qml" class="nav-link">QML</a></li>
                 <li><a href="#libros" class="nav-link">Libros</a></li>
-                <li><a href="#sobre" class="nav-link">Sobre</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -35,18 +39,17 @@
                 <h1>Quantum Resources</h1>
                 <p class="hero-subtitle">Tu guía completa para Computación Cuántica</p>
                 <p class="hero-description">
-                    Descubre cursos, libros, papers y videos sobre computación cuántica y machine learning cuántico. 
-                    Una colección curada de los mejores recursos para aprender sobre el futuro de la computación.
+                    Cursos, libros, papers, videos, frameworks y herramientas.
+                    Todo lo que necesitas para aprender sobre el futuro de la computación.
                 </p>
-                <div class="hero-buttons">
-                    <a href="#qml" class="btn btn-primary">
-                        <i class="fas fa-rocket"></i>
-                        Explorar QML
-                    </a>
-                    <a href="#libros" class="btn btn-secondary">
-                        <i class="fas fa-book"></i>
-                        Ver Libros
-                    </a>
+                <!-- Global Search -->
+                <div class="global-search">
+                    <div class="search-wrapper">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" id="global-search" placeholder="Buscar en todos los recursos..." autocomplete="off">
+                        <kbd class="search-shortcut">Ctrl+K</kbd>
+                    </div>
+                    <div class="search-results-dropdown" id="search-dropdown"></div>
                 </div>
             </div>
             <div class="hero-visual">
@@ -57,144 +60,239 @@
                 </div>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
-        </div>
     </header>
 
     <main>
+        <!-- Stats -->
         <section class="stats-section">
             <div class="container">
                 <div class="stats-grid">
                     <div class="stat-card">
+                        <i class="fab fa-youtube"></i>
+                        <h3>15+</h3>
+                        <p>Canales YouTube</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>20+</h3>
+                        <p>Cursos Online</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fab fa-github"></i>
+                        <h3>85+</h3>
+                        <p>Repositorios</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-file-alt"></i>
+                        <h3>40+</h3>
+                        <p>Papers</p>
+                    </div>
+                    <div class="stat-card">
                         <i class="fas fa-brain"></i>
-                        <h3 id="qml-count">55+</h3>
+                        <h3>50+</h3>
                         <p>Recursos QML</p>
                     </div>
                     <div class="stat-card">
                         <i class="fas fa-book-open"></i>
-                        <h3 id="books-count">500+</h3>
+                        <h3>60+</h3>
                         <p>Libros</p>
                     </div>
-                    <div class="stat-card">
-                        <i class="fas fa-calendar-alt"></i>
-                        <h3>2025</h3>
-                        <p>Actualizado</p>
-                    </div>
-                    <div class="stat-card">
-                        <i class="fas fa-users"></i>
-                        <h3>Comunidad</h3>
-                        <p>Global</p>
-                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="qml-section" id="qml">
+        <!-- YouTube Channels -->
+        <section class="section" id="youtube">
             <div class="container">
                 <div class="section-header">
-                    <h2>Quantum Machine Learning</h2>
-                    <p>Recursos esenciales para aprender QML desde cero hasta nivel avanzado</p>
+                    <h2><i class="fab fa-youtube"></i> YouTube Channels & Playlists</h2>
+                    <p>Los mejores canales para aprender computación cuántica</p>
                 </div>
-                
-                <div class="resource-categories">
-                    <div class="category-tabs">
-                        <button class="tab-btn active" data-category="all">Todos</button>
-                        <button class="tab-btn" data-category="courses">Cursos</button>
-                        <button class="tab-btn" data-category="papers">Papers</button>
-                        <button class="tab-btn" data-category="videos">Videos</button>
-                        <button class="tab-btn" data-category="tools">Herramientas</button>
-                    </div>
-                    
-                    <div class="resources-grid" id="qml-resources">
-                        <!-- Los recursos se cargarán dinámicamente -->
-                    </div>
+                <div class="filter-bar">
+                    <button class="tab-btn active" data-section="youtube" data-category="all">Todos</button>
+                    <button class="tab-btn" data-section="youtube" data-category="official">Oficiales</button>
+                    <button class="tab-btn" data-section="youtube" data-category="educational">Educativos</button>
+                    <button class="tab-btn" data-section="youtube" data-category="academic">Académicos</button>
                 </div>
+                <div class="resources-grid" id="youtube-grid"></div>
             </div>
         </section>
 
-        <section class="books-section" id="libros">
+        <!-- Online Courses -->
+        <section class="section section-alt" id="cursos">
             <div class="container">
                 <div class="section-header">
-                    <h2>Biblioteca Cuántica</h2>
-                    <p>Libros de computación cuántica organizados por año de publicación</p>
+                    <h2><i class="fas fa-graduation-cap"></i> Cursos Online & Plataformas</h2>
+                    <p>Aprende computación cuántica con los mejores cursos disponibles</p>
                 </div>
-                
-                <div class="books-filters">
-                    <button class="filter-btn active" data-year="all">Todos los años</button>
-                    <button class="filter-btn" data-year="2025">2025</button>
-                    <button class="filter-btn" data-year="2024">2024</button>
-                    <button class="filter-btn" data-year="2023">2023</button>
-                    <button class="filter-btn" data-year="2022">2022</button>
-                    <button class="filter-btn" data-year="2021">2021</button>
-                    <button class="filter-btn" data-year="old">2020 y anteriores</button>
+                <div class="filter-bar">
+                    <button class="tab-btn active" data-section="courses" data-category="all">Todos</button>
+                    <button class="tab-btn" data-section="courses" data-category="interactive">Interactivos</button>
+                    <button class="tab-btn" data-section="courses" data-category="free">Cursos Gratis</button>
+                    <button class="tab-btn" data-section="courses" data-category="certification">Certificaciones</button>
                 </div>
-                
-                <div class="search-container">
-                    <input type="text" id="book-search" placeholder="Buscar libros..." class="search-input">
-                    <i class="fas fa-search search-icon"></i>
+                <div class="resources-grid" id="courses-grid"></div>
+            </div>
+        </section>
+
+        <!-- GitHub Repos -->
+        <section class="section" id="repos">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fab fa-github"></i> GitHub Repositories</h2>
+                    <p>Frameworks, herramientas y proyectos open-source</p>
                 </div>
-                
-                <div class="books-grid" id="books-container">
-                    <!-- Los libros se cargarán dinámicamente -->
+                <div class="filter-bar">
+                    <button class="tab-btn active" data-section="repos" data-category="all">Todos</button>
+                    <button class="tab-btn" data-section="repos" data-category="framework">Frameworks</button>
+                    <button class="tab-btn" data-section="repos" data-category="awesome">Awesome Lists</button>
+                    <button class="tab-btn" data-section="repos" data-category="educational">Educativos</button>
+                    <button class="tab-btn" data-section="repos" data-category="simulator">Simuladores</button>
+                    <button class="tab-btn" data-section="repos" data-category="qml">QML</button>
+                    <button class="tab-btn" data-section="repos" data-category="qec">QEC</button>
+                    <button class="tab-btn" data-section="repos" data-category="pqc">Post-Quantum</button>
+                </div>
+                <div class="resources-grid" id="repos-grid"></div>
+            </div>
+        </section>
+
+        <!-- Papers -->
+        <section class="section section-alt" id="papers">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-file-alt"></i> Research Papers (2024-2026)</h2>
+                    <p>Papers fundamentales de arXiv y Semantic Scholar</p>
+                </div>
+                <div class="filter-bar">
+                    <button class="tab-btn active" data-section="papers" data-category="all">Todos</button>
+                    <button class="tab-btn" data-section="papers" data-category="landmark">Landmark</button>
+                    <button class="tab-btn" data-section="papers" data-category="qec">QEC</button>
+                    <button class="tab-btn" data-section="papers" data-category="qml">QML</button>
+                    <button class="tab-btn" data-section="papers" data-category="algorithms">Algoritmos</button>
+                    <button class="tab-btn" data-section="papers" data-category="hardware">Hardware</button>
+                    <button class="tab-btn" data-section="papers" data-category="pqc">Post-Quantum</button>
+                </div>
+                <div class="resources-grid" id="papers-grid"></div>
+            </div>
+        </section>
+
+        <!-- QML -->
+        <section class="section" id="qml">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-brain"></i> Quantum Machine Learning</h2>
+                    <p>Recursos esenciales para QML desde cero hasta nivel avanzado</p>
+                </div>
+                <div class="filter-bar">
+                    <button class="tab-btn active" data-section="qml" data-category="all">Todos</button>
+                    <button class="tab-btn" data-section="qml" data-category="video">Videos</button>
+                    <button class="tab-btn" data-section="qml" data-category="paper">Papers</button>
+                    <button class="tab-btn" data-section="qml" data-category="tutorial">Tutoriales</button>
+                </div>
+                <div class="resources-grid" id="qml-grid"></div>
+            </div>
+        </section>
+
+        <!-- Books -->
+        <section class="section section-alt" id="libros">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-book-open"></i> Biblioteca Cuántica</h2>
+                    <p>Libros de computación cuántica organizados por año</p>
+                </div>
+                <div class="filter-bar">
+                    <button class="tab-btn active" data-section="books" data-category="all">Todos</button>
+                    <button class="tab-btn" data-section="books" data-category="2025">2025</button>
+                    <button class="tab-btn" data-section="books" data-category="2024">2024</button>
+                    <button class="tab-btn" data-section="books" data-category="2023">2023</button>
+                    <button class="tab-btn" data-section="books" data-category="2022">2022</button>
+                    <button class="tab-btn" data-section="books" data-category="2021">2021</button>
+                    <button class="tab-btn" data-section="books" data-category="classic">Clásicos</button>
+                </div>
+                <div class="resources-grid" id="books-grid"></div>
+            </div>
+        </section>
+
+        <!-- Search Tools -->
+        <section class="section" id="tools">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-search"></i> Buscadores & Herramientas de Descubrimiento</h2>
+                </div>
+                <div class="tools-grid">
+                    <a href="https://arxiv.org/list/quant-ph/new" target="_blank" class="tool-card">
+                        <i class="fas fa-file-alt"></i>
+                        <h4>arXiv Quantum Physics</h4>
+                        <p>16,000+ papers en 2025</p>
+                    </a>
+                    <a href="https://www.semanticscholar.org/search?q=quantum+computing&sort=relevance" target="_blank" class="tool-card">
+                        <i class="fas fa-robot"></i>
+                        <h4>Semantic Scholar</h4>
+                        <p>Búsqueda con IA y análisis de citas</p>
+                    </a>
+                    <a href="https://scholar.google.com/scholar?q=quantum+computing" target="_blank" class="tool-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h4>Google Scholar</h4>
+                        <p>Búsqueda académica amplia</p>
+                    </a>
+                    <a href="https://quantumcomputingreport.com/" target="_blank" class="tool-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Quantum Computing Report</h4>
+                        <p>Noticias y seguimiento de la industria</p>
+                    </a>
+                    <a href="https://thequantuminsider.com/" target="_blank" class="tool-card">
+                        <i class="fas fa-newspaper"></i>
+                        <h4>The Quantum Insider</h4>
+                        <p>Noticias y análisis de tecnología cuántica</p>
+                    </a>
+                    <a href="https://pennylane.ai/blog" target="_blank" class="tool-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4>PennyLane Blog</h4>
+                        <p>Top papers y research highlights</p>
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer" id="sobre">
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Quantum Resources</h3>
-                    <p>Una colección curada de recursos para aprender computación cuántica y machine learning cuántico.</p>
+                    <p>Colección curada de recursos para computación cuántica y machine learning cuántico.</p>
                     <div class="social-links">
-                        <a href="https://twitter.com/unimauro" target="_blank">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="https://github.com/unimauro" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/carloscardenasf/" target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
+                        <a href="https://twitter.com/unimauro" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/unimauro" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/carloscardenasf/" target="_blank"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
-                
                 <div class="footer-section">
-                    <h4>Enlaces rápidos</h4>
+                    <h4>Enlaces</h4>
                     <ul>
-                        <li><a href="#qml">Recursos QML</a></li>
+                        <li><a href="#youtube">YouTube</a></li>
+                        <li><a href="#cursos">Cursos</a></li>
+                        <li><a href="#repos">GitHub Repos</a></li>
+                        <li><a href="#papers">Papers</a></li>
+                        <li><a href="#qml">QML</a></li>
                         <li><a href="#libros">Libros</a></li>
-                        <li><a href="https://github.com/unimauro/QuantumResources">GitHub</a></li>
-                        <li><a href="https://www.cardenas.pe/">Blog</a></li>
                     </ul>
                 </div>
-                
                 <div class="footer-section">
                     <h4>Contacto</h4>
-                    <p>
-                        <i class="fas fa-envelope"></i>
-                        carlos@cardenas.pe
-                    </p>
-                    <p>
-                        <i class="fas fa-globe"></i>
-                        <a href="https://www.cardenas.pe/">www.cardenas.pe</a>
-                    </p>
+                    <p><i class="fas fa-envelope"></i> carlos@cardenas.pe</p>
+                    <p><i class="fas fa-globe"></i> <a href="https://www.cardenas.pe/">www.cardenas.pe</a></p>
                 </div>
             </div>
-            
             <div class="footer-bottom">
-                <p>&copy; 2025 Carlos Cárdenas. Todos los derechos reservados.</p>
-                <p>Última actualización: <span id="last-update"></span></p>
+                <p>&copy; 2026 Carlos Cárdenas. Todos los derechos reservados.</p>
+                <p>Última actualización: Marzo 2026</p>
             </div>
         </div>
     </footer>
 
-    <button class="scroll-to-top" id="scroll-top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+    <button class="scroll-to-top" id="scroll-top"><i class="fas fa-arrow-up"></i></button>
 
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
