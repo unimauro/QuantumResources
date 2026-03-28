@@ -447,6 +447,29 @@ body {
 .scroll-to-top.visible { opacity: 1; visibility: visible; }
 .scroll-to-top:hover { background: var(--secondary-color); transform: translateY(-2px); }
 
+/* Buy Me a Coffee floating */
+.bmc-floating {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #ffdd00;
+    color: #000;
+    padding: 10px 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    box-shadow: var(--shadow-lg);
+    z-index: 50;
+    transition: all 0.3s;
+}
+
+.bmc-floating:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.2); }
+.bmc-floating img { width: 20px; height: 20px; }
+
 /* Responsive */
 @media (max-width: 768px) {
     .hamburger { display: flex; }

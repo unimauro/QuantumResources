@@ -496,3 +496,5 @@
 - If you find this resource helpful, give it a star!
 - Contributions welcome via Pull Requests
 - Open an Issue to suggest new resources
+
+[![Buy Me A Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/unimauro)
