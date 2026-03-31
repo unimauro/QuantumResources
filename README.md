@@ -2,7 +2,7 @@
 
 > A comprehensive, curated collection of Quantum Computing resources: courses, books, papers, videos, frameworks, and tools.
 
-**Last updated:** March 2026
+**Last updated:** March April 2026
 
 ---
 
