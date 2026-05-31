@@ -1,0 +1,32 @@
+---
+title: Quantum Gate Visualizer
+sidebar_position: 2
+description: Explore the matrices of common single-qubit gates and see exactly how they transform the computational basis states.
+---
+
+import GateVisualizer from '@site/src/components/GateVisualizer';
+
+Every single-qubit gate is a $2\times 2$ **unitary matrix**. Acting on the basis
+states $\lvert 0 \rangle$ and $\lvert 1 \rangle$, the columns of the matrix tell
+you exactly where each basis state goes.
+
+Select a gate to see its matrix and its action:
+
+<GateVisualizer />
+
+## The gate cheat-sheet
+
+- **X, Y, Z** — the Pauli gates. $X$ is the quantum NOT, $Z$ flips the phase of
+  $\lvert 1 \rangle$, and $Y = iXZ$ does both.
+- **H** (Hadamard) — turns basis states into superpositions and back. It maps
+  the $z$-axis to the $x$-axis on the [Bloch sphere](./bloch-sphere.mdx).
+- **S** and **T** — phase gates. $S = \sqrt{Z}$ adds a $\pi/2$ phase; $T = \sqrt{S}$
+  adds $\pi/4$. The set $\{H, T, \text{CNOT}\}$ is **universal** — it can
+  approximate any quantum computation.
+
+:::note Unitarity
+A matrix $U$ is a valid quantum gate iff $U^\dagger U = I$. This guarantees the
+total probability stays $1$ and the operation is reversible.
+:::
+
+Now build multi-qubit circuits in the [Circuit Builder](./circuit-builder.mdx).

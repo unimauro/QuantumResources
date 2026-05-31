@@ -1,0 +1,38 @@
+---
+title: Quantum Circuit Builder
+sidebar_position: 3
+description: Build a 2-qubit quantum circuit gate by gate and watch the statevector and measurement probabilities update in real time.
+---
+
+import CircuitBuilder from '@site/src/components/CircuitBuilder';
+
+Build a **2-qubit circuit** one gate at a time. The simulator tracks the full
+statevector — four complex amplitudes for the basis states $\lvert 00\rangle$,
+$\lvert 01\rangle$, $\lvert 10\rangle$ and $\lvert 11\rangle$ — and shows the
+measurement probabilities live.
+
+The circuit starts pre-loaded with the classic **Bell-state** recipe
+($H$ on q0, then CNOT q0→q1). Press **Clear** to start from $\lvert 00\rangle$.
+
+<CircuitBuilder />
+
+## Experiments
+
+1. **Bell state** — `H(q0) · CNOT(q0→q1)` gives $(\lvert 00\rangle + \lvert 11\rangle)/\sqrt{2}$:
+   two qubits, perfectly correlated, 50/50 between $\lvert 00\rangle$ and
+   $\lvert 11\rangle$. This is **entanglement**.
+2. **All four Bell states** — try adding an $X$ or $Z$ on q0 before the CNOT.
+3. **Superposition without entanglement** — `H(q0) · H(q1)` spreads probability
+   evenly over all four outcomes, but the qubits are still independent.
+4. **GHZ-style correlation** — chain `H(q0) · CNOT(q0→q1)` and inspect how the
+   amplitudes concentrate.
+
+:::tip From two qubits to many
+This simulator stops at two qubits to stay fast and clear, but the idea scales:
+$n$ qubits need $2^n$ complex amplitudes — which is exactly why simulating large
+quantum systems on classical computers is so hard, and why real quantum hardware
+is interesting.
+:::
+
+Ready to run circuits on a real simulator? Head to the
+[Hands-on Labs](../labs/overview.md) and build them in Qiskit.

@@ -1,0 +1,8 @@
+release:
+  label: Release
+  permalink: /release
+  description: Release notes and changelog entries
+announcement:
+  label: Announcement
+  permalink: /announcement
+  description: Project announcements

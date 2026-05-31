@@ -1,0 +1,37 @@
+name: 📚 Add a resource
+description: Suggest a book, course, paper, video or tool to add to the hub.
+title: "[Resource] <title>"
+labels: ["resource", "good first issue"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type of resource
+      options: [Book, Course, Paper, Video, Tool, Framework]
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Title
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link (must not 404)
+    validations:
+      required: true
+  - type: input
+    id: year
+    attributes:
+      label: Year
+  - type: dropdown
+    id: level
+    attributes:
+      label: Level / category
+      options: [beginner, intermediate, advanced, programming, academic, business, general]
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is it worth adding?

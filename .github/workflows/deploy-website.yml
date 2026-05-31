@@ -1,0 +1,71 @@
+name: Deploy Learning Hub (Docusaurus)
+
+on:
+  push:
+    branches: [master, main]
+    paths:
+      - 'website/**'
+      - 'docs/data.json'
+      - '.github/workflows/deploy-website.yml'
+  workflow_dispatch:
+
+# Allow this workflow to deploy to GitHub Pages.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment; don't cancel in-progress production deploys.
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: 🏗️ Build site
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: website
+    steps:
+      - name: 📥 Checkout
+        uses: actions/checkout@v4
+
+      - name: 🟢 Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: website/package-lock.json
+
+      - name: 🔄 Sync curated data
+        # docs/data.json is the canonical resource database (generated from
+        # README.md). Copy the freshest version into the site before building.
+        run: |
+          if [ -f ../docs/data.json ]; then
+            cp ../docs/data.json src/data/quantum-data.json
+            echo "Synced docs/data.json -> src/data/quantum-data.json"
+          fi
+
+      - name: 📦 Install dependencies
+        run: npm ci
+
+      - name: 🛠️ Build
+        run: npm run build
+
+      - name: 📤 Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: website/build
+
+  deploy:
+    name: 🚀 Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 🌐 Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

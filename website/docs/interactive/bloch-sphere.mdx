@@ -1,0 +1,47 @@
+---
+title: Bloch Sphere Simulator
+sidebar_position: 1
+description: An interactive 3D Bloch sphere. Apply quantum gates and watch a single qubit's state move on the sphere in real time.
+---
+
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+The **Bloch sphere** is the standard way to picture the state of a single
+qubit. Any pure state can be written as
+
+$$
+\lvert \psi \rangle = \cos\tfrac{\theta}{2}\,\lvert 0 \rangle + e^{i\varphi}\sin\tfrac{\theta}{2}\,\lvert 1 \rangle
+$$
+
+and mapped to a point on the unit sphere with coordinates
+$(\sin\theta\cos\varphi,\ \sin\theta\sin\varphi,\ \cos\theta)$.
+
+- **North pole** ($z=+1$) is $\lvert 0 \rangle$, **south pole** is $\lvert 1 \rangle$.
+- The **equator** holds the equal-superposition states like
+  $\lvert + \rangle = (\lvert 0\rangle + \lvert 1\rangle)/\sqrt{2}$.
+
+Click the gate buttons below to apply gates and watch the state vector move.
+
+<BrowserOnly>
+  {() => {
+    const BlochSphere = require('@site/src/components/BlochSphere').default;
+    return <BlochSphere />;
+  }}
+</BrowserOnly>
+
+## Things to try
+
+1. Apply **H** to $\lvert 0 \rangle$ — the vector swings to the $+x$ axis (the $\lvert + \rangle$ state).
+2. From there, apply **Z** — it rotates to $-x$ (the $\lvert - \rangle$ state).
+3. Apply **H** then **S** then **H** — this is a rotation you'll meet again in phase-estimation circuits.
+4. Apply the same gate twice: **X·X**, **H·H**, **Z·Z** all return you to where you started (these gates are their own inverse).
+
+## Why it matters
+
+Single-qubit gates are **rotations of the Bloch sphere**. Getting an intuition
+for how H, X, Y, Z, S and T move the state vector is one of the fastest ways to
+build real quantum intuition. When you're ready, combine qubits in the
+[Circuit Builder](./circuit-builder.mdx) and study the gate matrices in the
+[Gate Visualizer](./gate-visualizer.mdx).
+
+See also the [Beginner Path → Qubits & Gates](../roadmaps/beginner.md).
