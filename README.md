@@ -1,6 +1,75 @@
-# QuantumResources 🔬⚛️
+<div align="center">
 
-> A comprehensive, curated collection of Quantum Computing resources: courses, books, papers, videos, frameworks, and tools.
+# ⚛️ Quantum Resources
+
+### The Ultimate Open Quantum Computing Learning Hub
+
+From your first qubit to quantum machine learning, error correction and real careers —
+**curated, structured, and hands-on.**
+
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Funimauro.github.io%2FQuantumResources%2F&label=live%20site&style=for-the-badge)](https://unimauro.github.io/QuantumResources/)
+[![Stars](https://img.shields.io/github/stars/unimauro/QuantumResources?style=for-the-badge&color=a855f7)](https://github.com/unimauro/QuantumResources/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-22d3ee?style=for-the-badge)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-6d5efc?style=for-the-badge)](CONTRIBUTING.md)
+
+[![Built with Docusaurus](https://img.shields.io/badge/Built%20with-Docusaurus%203-3ECC5F?style=flat-square&logo=docusaurus)](https://docusaurus.io/)
+[![Books](https://img.shields.io/badge/Books-500%2B-blue?style=flat-square)](https://unimauro.github.io/QuantumResources/docs/resources/books)
+[![Labs](https://img.shields.io/badge/Hands--on%20Labs-5-orange?style=flat-square)](https://unimauro.github.io/QuantumResources/docs/labs/overview)
+[![Frameworks](https://img.shields.io/badge/Frameworks-6-purple?style=flat-square)](https://unimauro.github.io/QuantumResources/docs/frameworks/overview)
+
+**[🚀 Open the Learning Hub →](https://unimauro.github.io/QuantumResources/)**
+
+</div>
+
+---
+
+## 🧭 What's inside
+
+Quantum Resources grew from a curated link list into a full **learning platform**.
+
+| Section | Description |
+| --- | --- |
+| 🗺️ **[Learning Roadmaps](https://unimauro.github.io/QuantumResources/docs/roadmaps/overview)** | Four structured paths: Beginner · Intermediate · Advanced · Quantum AI |
+| 🧪 **[Hands-on Labs](https://unimauro.github.io/QuantumResources/docs/labs/overview)** | RNG · Teleportation · Grover · Deutsch–Jozsa · QML classifier |
+| 🧰 **[Frameworks](https://unimauro.github.io/QuantumResources/docs/frameworks/overview)** | Qiskit · Cirq · PennyLane · Q# · Braket · TensorFlow Quantum |
+| ⚛️ **[Interactive Tools](https://unimauro.github.io/QuantumResources/docs/interactive/bloch-sphere)** | Bloch sphere · Gate visualizer · Circuit builder (in-browser) |
+| 📚 **[Resources](https://unimauro.github.io/QuantumResources/docs/resources/overview)** | 500+ searchable books · courses · research papers |
+| 💼 **[Career Paths](https://unimauro.github.io/QuantumResources/docs/career/overview)** | Software · Research · QML · Hardware roles |
+
+## 🛠️ Run the site locally
+
+Requires **Node.js 20+**.
+
+```bash
+git clone https://github.com/unimauro/QuantumResources.git
+cd QuantumResources/website
+npm install
+npm start    # http://localhost:3000/QuantumResources/
+```
+
+The learning content lives in `website/`. The curated resource list below
+(`README.md`) is the canonical database — it is parsed into `docs/data.json`,
+which powers the searchable [Books explorer](https://unimauro.github.io/QuantumResources/docs/resources/books).
+
+## 🤝 Contributing
+
+Contributions are very welcome — add a resource, fix a link, or write a new lab.
+See **[CONTRIBUTING.md](CONTRIBUTING.md)** and the
+[good first issues](https://github.com/unimauro/QuantumResources/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).
+
+## 🗺️ Roadmap
+
+- [x] Docusaurus Learning Hub with roadmaps, labs, frameworks and careers
+- [x] Interactive Bloch sphere, gate visualizer and circuit builder
+- [x] Searchable 500+ book database
+- [ ] Searchable research-paper database with filters
+- [ ] AI-powered resource recommendations and study plans
+- [ ] More labs (QAOA, VQE, error correction) and additional interactive tools
+
+See the full **[CHANGELOG](CHANGELOG.md)**.
+
+---
+
 
 **Last updated:** March April 2026
 

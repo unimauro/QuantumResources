@@ -1,0 +1,19 @@
+name: 🐛 Bug or broken link
+description: Report a problem with the site or a broken link.
+title: "[Bug] <summary>"
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What's wrong?
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Page URL (if applicable)
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
