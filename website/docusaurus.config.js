@@ -12,9 +12,10 @@ const config = {
   tagline: 'The Ultimate Open Quantum Computing Learning Hub',
   favicon: 'img/favicon.svg',
 
-  future: {
-    v4: true,
-  },
+  // Note: the experimental "faster" (Rspack) bundler is intentionally not
+  // enabled. Its native binding is platform-specific and breaks `npm ci` on
+  // CI runners when the lockfile is generated on another OS. The default
+  // webpack bundler builds reliably everywhere.
 
   url: 'https://unimauro.github.io',
   baseUrl: '/QuantumResources/',
