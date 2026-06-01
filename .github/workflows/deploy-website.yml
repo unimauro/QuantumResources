@@ -54,7 +54,13 @@ jobs:
           fi
 
       - name: 📦 Install dependencies
-        run: npm ci
+        # npm has a long-standing bug with platform-specific optional deps
+        # (rollup/rspack native bindings) when the committed lockfile was
+        # generated on another OS — npm/cli#4828. Regenerating on the Linux
+        # runner installs the correct linux-x64 bindings reliably.
+        run: |
+          rm -f package-lock.json
+          npm install --no-audit --no-fund
 
       - name: 🛠️ Build
         run: npm run build
