@@ -39,12 +39,18 @@ jobs:
           cache-dependency-path: website/package-lock.json
 
       - name: 🔄 Sync curated data
-        # docs/data.json is the canonical resource database (generated from
-        # README.md). Copy the freshest version into the site before building.
+        # docs/data.json holds the full resource database (500+ books). Copy it
+        # into the site before building, but only if it looks valid — never let a
+        # stale/empty regeneration degrade the committed dataset.
         run: |
           if [ -f ../docs/data.json ]; then
-            cp ../docs/data.json src/data/quantum-data.json
-            echo "Synced docs/data.json -> src/data/quantum-data.json"
+            count=$(python3 -c "import json;print(json.load(open('../docs/data.json')).get('total_books',0))" 2>/dev/null || echo 0)
+            if [ "$count" -gt 50 ]; then
+              cp ../docs/data.json src/data/quantum-data.json
+              echo "Synced docs/data.json ($count books) -> src/data/quantum-data.json"
+            else
+              echo "Skipping sync: docs/data.json has only $count books; keeping committed copy."
+            fi
           fi
 
       - name: 📦 Install dependencies

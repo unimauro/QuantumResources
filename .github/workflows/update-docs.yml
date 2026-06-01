@@ -41,12 +41,15 @@ jobs:
       - name: 🚀 Update documentation data
         run: |
           echo "🔄 Regenerating resource data..."
-          python update_docs.py --verbose
+          # The parser exits non-zero if it finds no data (e.g. the README
+          # structure changed). That must not fail the job — the existing
+          # docs/data.json is left untouched in that case.
+          python update_docs.py --verbose || echo "::warning::Parser extracted no data; docs/data.json left unchanged."
           if [ ! -f "docs/data.json" ]; then
-            echo "❌ Error: data.json was not generated"
+            echo "❌ Error: data.json missing"
             exit 1
           fi
-          echo "✅ data.json regenerated"
+          echo "✅ data.json present"
 
       - name: 📊 Show statistics
         run: |
